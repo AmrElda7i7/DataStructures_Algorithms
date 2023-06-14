@@ -25,14 +25,14 @@ function BubbleSortOptimized($list)
 {
     for($i=sizeof($list);$i>0;$i--)
     {
-        $IsSwapped = false ;
+        $IsSwapped= false ;
         for($j=0;$j<$i-1 ;$j++) 
         {
             if($list[$j]>$list[$j+1] )
             {
-                $swapped = $list[$j+1] ;
+                $temp = $list[$j+1] ;
                 $list[$j+1] =$list[$j] ;
-                $list[$j] = $swapped ;
+                $list[$j] = $temp ;
                 $IsSwapped = true ;
             }
         }
@@ -40,4 +40,4 @@ function BubbleSortOptimized($list)
 
     }
     return $list ;
-}
+}   
