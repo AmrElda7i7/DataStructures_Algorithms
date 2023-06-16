@@ -1,11 +1,10 @@
 <?php
 $arr = [5, 6, 7, 8,2, 3, 1, 4 ];
-print_r(QuickSort($arr ,0,7));
+print_r(QuickSort($arr ,0,count($arr)-1));
 
-function QuickSort(&$array, $left=0, $right = -5)
+function QuickSort(&$array, $left, $right )
 {
-    if ($right == -5)
-        $right = count($array) - 1;
+    
     if ($left < $right) {
         $pivotIndex = partition($array, $left, $right);
         QuickSort($array, $left, $pivotIndex - 1);
