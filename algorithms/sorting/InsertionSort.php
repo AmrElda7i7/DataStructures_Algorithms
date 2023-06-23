@@ -1,5 +1,5 @@
 <?php
-$list= [80,90,60,30,70,50,40]  ;
+$list= [80,90,60,30,70,50,40]  ; 
 print_r(InsertionSort($list)) ;
 
 
