@@ -133,7 +133,8 @@ class BST
         $q->push($this->root) ;
         while(!$q->isEmpty() )
         {
-            $current = $q->top() ;
+            $current = $q->top() 
+            ;
             $q->pop() ;
             echo $current->value."\n" ;
             if($current->left != null  )  $q->push($current->left) ;
